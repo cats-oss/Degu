@@ -85,6 +85,15 @@ extension AppDelegate: UIApplicationProxyDelegate {
 }
 ```
 
+You can get lifecycle method call of all ViewControllers.
+
+```swift
+func applicationProxy(_ proxy: UIApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {
+    print("ViewController = \(viewController)")
+    print("LifeCycle = \(lifeCycle)")
+}
+```
+
 ## Requirements
 
 - Xcode 9.1
