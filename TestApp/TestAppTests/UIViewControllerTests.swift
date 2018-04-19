@@ -41,7 +41,7 @@ class UIViewControllerTests: XCTestCase {
     func testLifeCycle() {
         let testVC = UIViewControllerMock()
 
-        do {
+        AppearingTest: do {
             let expect = expectation(description: "wait appearing life cycles")
 
             var lifeCycles: [ViewControllerLifeCycle] = []
@@ -55,6 +55,10 @@ class UIViewControllerTests: XCTestCase {
                 case (.viewWillDisappear, is ViewController):
                     return
                 case (.viewDidDisappear, is ViewController):
+                    return
+                case (.viewWillLayoutSubviews, _):
+                    return
+                case (.viewDidLayoutSubviews, _):
                     return
                 default:
                     break
@@ -72,7 +76,41 @@ class UIViewControllerTests: XCTestCase {
             wait(for: [expect], timeout: 5)
         }
 
-        do {
+        LayoutingTest: do {
+            let expect = expectation(description: "wait layouting life cycles")
+
+            var lifeCycles: [ViewControllerLifeCycle] = []
+            let expectedLifeCycles: [ViewControllerLifeCycle] = [
+                .viewWillLayoutSubviews,
+                .viewDidLayoutSubviews
+            ]
+            delegate.didCallLifeCycle = { lifeCycle, viewController in
+                XCTAssertEqual(testVC, viewController)
+                lifeCycles.append(lifeCycle)
+                if lifeCycles.count == 2, lifeCycles == expectedLifeCycles {
+                    expect.fulfill()
+                }
+            }
+
+            let view = UIView(frame: .zero)
+            view.translatesAutoresizingMaskIntoConstraints = false
+            testVC.view.addSubview(view)
+            testVC.view.addConstraints([.top, .left, .right, .bottom]
+                .map {
+                    NSLayoutConstraint(item: testVC.view,
+                                       attribute: $0,
+                                       relatedBy: .equal,
+                                       toItem: view,
+                                       attribute: $0,
+                                       multiplier: 1,
+                                       constant: 0)
+                }
+            )
+
+            wait(for: [expect], timeout: 5)
+        }
+
+        DisappearingTest: do {
             let expect = expectation(description: "wait disappearing life cycles")
 
             var lifeCycles: [ViewControllerLifeCycle] = []
@@ -85,6 +123,10 @@ class UIViewControllerTests: XCTestCase {
                 case (.viewWillAppear, is ViewController):
                     return
                 case (.viewDidAppear, is ViewController):
+                    return
+                case (.viewWillLayoutSubviews, _):
+                    return
+                case (.viewDidLayoutSubviews, _):
                     return
                 default:
                     break

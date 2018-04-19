@@ -15,6 +15,8 @@ public enum ViewControllerLifeCycle {
     case viewDidAppear
     case viewWillDisappear
     case viewDidDisappear
+    case viewWillLayoutSubviews
+    case viewDidLayoutSubviews
 }
 
 let _onceSwizzlingForUIViewController: () = {
@@ -37,6 +39,14 @@ let _onceSwizzlingForUIViewController: () = {
     swizzle(UIViewController.self,
             from: #selector(UIViewController.viewDidDisappear(_:)),
             to: #selector(UIViewController._swizzled_viewDidDisappear(_:)))
+
+    swizzle(UIViewController.self,
+            from: #selector(UIViewController.viewWillLayoutSubviews),
+            to: #selector(UIViewController._swizzled_viewWillLayoutSubviews))
+
+    swizzle(UIViewController.self,
+            from: #selector(UIViewController.viewDidLayoutSubviews),
+            to: #selector(UIViewController._swizzled_viewDidLayoutSubviews))
 }()
 
 extension UIViewController {
@@ -76,6 +86,20 @@ extension UIViewController {
         _swizzled_viewDidDisappear(animated)
         _applicationProxy.delegate?.applicationProxy(_applicationProxy,
                                                      didCallLifeCycle: .viewDidDisappear,
+                                                     ofViewController: self)
+    }
+
+    @objc fileprivate func _swizzled_viewWillLayoutSubviews() {
+        _swizzled_viewWillLayoutSubviews()
+        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
+                                                     didCallLifeCycle: .viewWillLayoutSubviews,
+                                                     ofViewController: self)
+    }
+
+    @objc fileprivate func _swizzled_viewDidLayoutSubviews() {
+        _swizzled_viewDidLayoutSubviews()
+        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
+                                                     didCallLifeCycle: .viewDidLayoutSubviews,
                                                      ofViewController: self)
     }
 }
