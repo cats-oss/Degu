@@ -14,6 +14,7 @@
 		9D838A122087282500AC5692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D838A102087282500AC5692 /* LaunchScreen.storyboard */; };
 		9D838A1D2087282500AC5692 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D838A1C2087282500AC5692 /* TestAppTests.swift */; };
 		9D838A28208728F600AC5692 /* UIApplicationDebugKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D838A29208728F600AC5692 /* UIApplicationDebugKit.framework */; };
+		9DBD74AF208829A000B3B347 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD74AE208829A000B3B347 /* UIViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9D838A1C2087282500AC5692 /* TestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppTests.swift; sourceTree = "<group>"; };
 		9D838A1E2087282500AC5692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D838A29208728F600AC5692 /* UIApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBD74AE208829A000B3B347 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				9D838A1C2087282500AC5692 /* TestAppTests.swift */,
+				9DBD74AE208829A000B3B347 /* UIViewControllerTests.swift */,
 				9D838A1E2087282500AC5692 /* Info.plist */,
 			);
 			path = TestAppTests;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBD74AF208829A000B3B347 /* UIViewControllerTests.swift in Sources */,
 				9D838A1D2087282500AC5692 /* TestAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

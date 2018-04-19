@@ -18,10 +18,14 @@ public protocol UIApplicationProxyDelegate: class {
     ///
     /// - SeeAlso: UIApplication.sendAction(_:to:from:for:)
     func applicationProxy(_ proxy: UIApplicationProxy, didSendAction action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?)
+
+    /// Receive viewController when its life cycle called.
+    func applicationProxy(_ proxy: UIApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController)
 }
 
 /// Default implementations to make them Optional.
 extension UIApplicationProxyDelegate {
     public func applicationProxy(_ proxy: UIApplicationProxy, didSendEvent event: UIEvent) {}
     public func applicationProxy(_ proxy: UIApplicationProxy, didSendAction action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) {}
+    public func applicationProxy(_ proxy: UIApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {}
 }

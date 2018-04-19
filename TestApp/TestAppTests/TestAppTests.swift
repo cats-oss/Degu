@@ -44,6 +44,7 @@ class TestAppTests: XCTestCase {
         self.application = app
         self.proxy = app.proxy
         self.delegate = delegate
+        self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
     }
     
     func testSendEvent() {

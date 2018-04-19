@@ -10,6 +10,9 @@
 		9D8389EB20870FE500AC5692 /* UIApplicationDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8389DD20870FE500AC5692 /* UIApplicationDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D8389F62087103200AC5692 /* UIApplicationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8389F52087103200AC5692 /* UIApplicationProxy.swift */; };
 		9D8389F82087108100AC5692 /* UIApplicationProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8389F72087108100AC5692 /* UIApplicationProxyDelegate.swift */; };
+		9DBD74A9208818AC00B3B347 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD74A8208818AC00B3B347 /* Swizzle.swift */; };
+		9DBD74AB208818F100B3B347 /* UIApplication.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD74AA208818F100B3B347 /* UIApplication.extension.swift */; };
+		9DBD74AD2088258400B3B347 /* UIViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD74AC2088258400B3B347 /* UIViewController.extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,9 @@
 		9D8389DE20870FE500AC5692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D8389F52087103200AC5692 /* UIApplicationProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationProxy.swift; sourceTree = "<group>"; };
 		9D8389F72087108100AC5692 /* UIApplicationProxyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationProxyDelegate.swift; sourceTree = "<group>"; };
+		9DBD74A8208818AC00B3B347 /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
+		9DBD74AA208818F100B3B347 /* UIApplication.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.extension.swift; sourceTree = "<group>"; };
+		9DBD74AC2088258400B3B347 /* UIViewController.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 			children = (
 				9D8389F52087103200AC5692 /* UIApplicationProxy.swift */,
 				9D8389F72087108100AC5692 /* UIApplicationProxyDelegate.swift */,
+				9DBD74A8208818AC00B3B347 /* Swizzle.swift */,
+				9DBD74AA208818F100B3B347 /* UIApplication.extension.swift */,
+				9DBD74AC2088258400B3B347 /* UIViewController.extension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -147,6 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBD74AD2088258400B3B347 /* UIViewController.extension.swift in Sources */,
+				9DBD74A9208818AC00B3B347 /* Swizzle.swift in Sources */,
+				9DBD74AB208818F100B3B347 /* UIApplication.extension.swift in Sources */,
 				9D8389F82087108100AC5692 /* UIApplicationProxyDelegate.swift in Sources */,
 				9D8389F62087103200AC5692 /* UIApplicationProxy.swift in Sources */,
 			);
