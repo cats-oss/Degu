@@ -56,50 +56,36 @@ extension UIViewController {
 
     @objc fileprivate func _swizzled_viewDidLoad() {
         _swizzled_viewDidLoad()
-        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
-                                                     didCallLifeCycle: .viewDidLoad,
-                                                     ofViewController: self)
+        _applicationProxy.didCallLifeCycle(.viewDidLoad, of: self)
     }
 
     @objc fileprivate func _swizzled_viewWillAppear(_ animated: Bool) {
         _swizzled_viewWillAppear(animated)
-        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
-                                                     didCallLifeCycle: .viewWillAppear,
-                                                     ofViewController: self)
+        _applicationProxy.didCallLifeCycle(.viewWillAppear, of: self)
     }
 
     @objc fileprivate func _swizzled_viewDidAppear(_ animated: Bool) {
         _swizzled_viewDidAppear(animated)
-        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
-                                                     didCallLifeCycle: .viewDidAppear,
-                                                     ofViewController: self)
+        _applicationProxy.didCallLifeCycle(.viewDidAppear, of: self)
     }
 
     @objc fileprivate func _swizzled_viewWillDisappear(_ animated: Bool) {
         _swizzled_viewWillDisappear(animated)
-        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
-                                                     didCallLifeCycle: .viewWillDisappear,
-                                                     ofViewController: self)
+        _applicationProxy.didCallLifeCycle(.viewWillDisappear, of: self)
     }
 
     @objc fileprivate func _swizzled_viewDidDisappear(_ animated: Bool) {
         _swizzled_viewDidDisappear(animated)
-        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
-                                                     didCallLifeCycle: .viewDidDisappear,
-                                                     ofViewController: self)
+        _applicationProxy.didCallLifeCycle(.viewDidDisappear, of: self)
     }
 
     @objc fileprivate func _swizzled_viewWillLayoutSubviews() {
         _swizzled_viewWillLayoutSubviews()
-        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
-                                                     didCallLifeCycle: .viewWillLayoutSubviews,
-                                                     ofViewController: self)
+        _applicationProxy.didCallLifeCycle(.viewWillLayoutSubviews, of: self)
     }
 
     @objc fileprivate func _swizzled_viewDidLayoutSubviews() {
         _swizzled_viewDidLayoutSubviews()
-        _applicationProxy.delegate?.applicationProxy(_applicationProxy,
-                                                     didCallLifeCycle: .viewDidLayoutSubviews,
-                                                     ofViewController: self)
+        _applicationProxy.didCallLifeCycle(.viewDidLayoutSubviews, of: self)
     }
 }

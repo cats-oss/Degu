@@ -27,6 +27,22 @@ public final class UIApplicationProxy {
     }
 }
 
+extension UIApplicationProxy {
+    func didSendEvent(_ event: UIEvent) {
+        delegate?.applicationProxy(self, didSendEvent: event)
+    }
+
+    func didSendAction(_ action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) {
+        delegate?.applicationProxy(self, didSendAction: action, to: target, from: sender, for: event)
+    }
+}
+
+extension UIApplicationProxy {
+    func didCallLifeCycle(_ lifeCycle: ViewControllerLifeCycle, of viewController: UIViewController) {
+        delegate?.applicationProxy(self, didCallLifeCycle: lifeCycle, ofViewController: viewController)
+    }
+}
+
 
 // MARK: - UIApplication Extension
 
