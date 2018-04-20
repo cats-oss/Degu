@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  TestApp
+//  Test
 //
-//  Created by marty-suzuki on 2018/04/18.
+//  Created by marty-suzuki on 2018/04/20.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("didFinishLaunchingWithOptions")
         return true
     }
 

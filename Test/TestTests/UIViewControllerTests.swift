@@ -1,14 +1,14 @@
 //
 //  UIViewControllerTests.swift
-//  TestAppTests
+//  TestTests
 //
-//  Created by marty-suzuki on 2018/04/19.
+//  Created by marty-suzuki on 2018/04/20.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
 //
 
 import XCTest
 import UIApplicationDebugKit
-@testable import TestApp
+@testable import Test
 
 class UIViewControllerTests: XCTestCase {
     private class UIApplicationProxyDelegateMock: UIApplicationProxyDelegate {
@@ -37,7 +37,7 @@ class UIViewControllerTests: XCTestCase {
         self.delegate = delegate
         self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
     }
-    
+
     func testLifeCycle() {
         let testVC = UIViewControllerMock()
 

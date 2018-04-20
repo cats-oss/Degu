@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../UIApplicationDebugKit.xcodeproj">
+      location = "group:../Test/Test.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:TestApp.xcodeproj">
+      location = "container:UIApplicationDebugKit.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,16 +1,16 @@
 //
-//  TestAppTests.swift
-//  TestAppTests
+//  UIEventTests.swift
+//  TestTests
 //
-//  Created by marty-suzuki on 2018/04/18.
+//  Created by marty-suzuki on 2018/04/20.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
 //
 
 import XCTest
 import UIApplicationDebugKit
-@testable import TestApp
+@testable import Test
 
-class TestAppTests: XCTestCase {
+class UIEventTests: XCTestCase {
     private class UIApplicationProxyDelegateMock: UIApplicationProxyDelegate {
         var didSendEvent: ((UIEvent) -> Void)?
         var didSendAction: ((Selector, Any?, Any?, UIEvent?) -> Void)?
@@ -46,7 +46,7 @@ class TestAppTests: XCTestCase {
         self.delegate = delegate
         self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
     }
-    
+
     func testSendEvent() {
         let event = UIEventMock()
 
