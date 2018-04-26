@@ -13,11 +13,11 @@
 		9DBD74A9208818AC00B3B347 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD74A8208818AC00B3B347 /* Swizzle.swift */; };
 		9DBD74AB208818F100B3B347 /* UIApplication.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD74AA208818F100B3B347 /* UIApplication.extension.swift */; };
 		9DBD74AD2088258400B3B347 /* UIViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD74AC2088258400B3B347 /* UIViewController.extension.swift */; };
+		9DC50AD82091947B00364310 /* RuntimeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC50AD62091947B00364310 /* RuntimeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC50AD92091947B00364310 /* RuntimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC50AD72091947B00364310 /* RuntimeHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D195E51208990F8009DFBF6 /* ClassLoadHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ClassLoadHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D195E8A208999E6009DFBF6 /* ClassLoadHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ClassLoadHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8389DA20870FE500AC5692 /* UIApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8389DD20870FE500AC5692 /* UIApplicationDebugKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIApplicationDebugKit.h; sourceTree = "<group>"; };
 		9D8389DE20870FE500AC5692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,6 +26,8 @@
 		9DBD74A8208818AC00B3B347 /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		9DBD74AA208818F100B3B347 /* UIApplication.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.extension.swift; sourceTree = "<group>"; };
 		9DBD74AC2088258400B3B347 /* UIViewController.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.extension.swift; sourceTree = "<group>"; };
+		9DC50AD62091947B00364310 /* RuntimeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeHandler.h; sourceTree = "<group>"; };
+		9DC50AD72091947B00364310 /* RuntimeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +44,6 @@
 		9D195E4F208990F8009DFBF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D195E8A208999E6009DFBF6 /* ClassLoadHandler.framework */,
-				9D195E51208990F8009DFBF6 /* ClassLoadHandler.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +83,8 @@
 				9DBD74A8208818AC00B3B347 /* Swizzle.swift */,
 				9DBD74AA208818F100B3B347 /* UIApplication.extension.swift */,
 				9DBD74AC2088258400B3B347 /* UIViewController.extension.swift */,
+				9DC50AD62091947B00364310 /* RuntimeHandler.h */,
+				9DC50AD72091947B00364310 /* RuntimeHandler.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC50AD82091947B00364310 /* RuntimeHandler.h in Headers */,
 				9D8389EB20870FE500AC5692 /* UIApplicationDebugKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC50AD92091947B00364310 /* RuntimeHandler.m in Sources */,
 				9DBD74AD2088258400B3B347 /* UIViewController.extension.swift in Sources */,
 				9DBD74A9208818AC00B3B347 /* Swizzle.swift in Sources */,
 				9DBD74AB208818F100B3B347 /* UIApplication.extension.swift in Sources */,
