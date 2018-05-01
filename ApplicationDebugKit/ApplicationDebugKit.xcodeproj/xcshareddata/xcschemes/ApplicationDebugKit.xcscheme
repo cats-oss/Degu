@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D8389D920870FE500AC5692"
-               BuildableName = "UIApplicationDebugKit.framework"
-               BlueprintName = "UIApplicationDebugKit"
-               ReferencedContainer = "container:UIApplicationDebugKit.xcodeproj">
+               BlueprintIdentifier = "9D6213D920986E5000D053FF"
+               BuildableName = "ApplicationDebugKit.framework"
+               BlueprintName = "ApplicationDebugKit"
+               ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D8389D920870FE500AC5692"
-            BuildableName = "UIApplicationDebugKit.framework"
-            BlueprintName = "UIApplicationDebugKit"
-            ReferencedContainer = "container:UIApplicationDebugKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -56,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D8389D920870FE500AC5692"
-            BuildableName = "UIApplicationDebugKit.framework"
-            BlueprintName = "UIApplicationDebugKit"
-            ReferencedContainer = "container:UIApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9D6213D920986E5000D053FF"
+            BuildableName = "ApplicationDebugKit.framework"
+            BlueprintName = "ApplicationDebugKit"
+            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -74,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D8389D920870FE500AC5692"
-            BuildableName = "UIApplicationDebugKit.framework"
-            BlueprintName = "UIApplicationDebugKit"
-            ReferencedContainer = "container:UIApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9D6213D920986E5000D053FF"
+            BuildableName = "ApplicationDebugKit.framework"
+            BlueprintName = "ApplicationDebugKit"
+            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

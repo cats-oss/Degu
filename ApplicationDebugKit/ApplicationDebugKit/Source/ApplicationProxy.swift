@@ -1,6 +1,6 @@
 //
-//  UIApplicationProxy.swift
-//  UIApplicationDebugKit
+//  ApplicationProxy.swift
+//  ApplicationDebugKit
 //
 //  Created by marty-suzuki on 2018/04/18.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
@@ -9,25 +9,25 @@
 import UIKit
 
 
-// MARK: - UIApplicationProxy
+// MARK: - ApplicationProxy
 
-public final class UIApplicationProxy {
-    static let key = UnsafeRawPointer(UnsafeMutablePointer<UInt8>.allocate(capacity: 1))
+public final class ApplicationProxy {
+    public static let shared = ApplicationProxy()
 
     /// Base UIApplication.
     public private(set) weak var application: UIApplication?
 
     /// default nil. weak reference
-    public weak var delegate: UIApplicationProxyDelegate?
+    public weak var delegate: ApplicationProxyDelegate?
 
-    fileprivate init(_ application: UIApplication) {
+    private init() {
+        /// this initializer is not called until ApplicationProxy.shared is called.
         _ = _onceSwizzlingForUIApplication
         _ = _onceSwizzlingForUIViewController
-        self.application = application
     }
 }
 
-extension UIApplicationProxy {
+extension ApplicationProxy {
     func didSendEvent(_ event: UIEvent) {
         delegate?.applicationProxy(self, didSendEvent: event)
     }
@@ -37,16 +37,16 @@ extension UIApplicationProxy {
     }
 }
 
-extension UIApplicationProxy {
+extension ApplicationProxy {
     func didCallLifeCycle(_ lifeCycle: ViewControllerLifeCycle, of viewController: UIViewController) {
         delegate?.applicationProxy(self, didCallLifeCycle: lifeCycle, ofViewController: viewController)
     }
 }
 
 
-// MARK: - UIApplicationProxy.Once
+// MARK: - ApplicationProxy.Once
 
-extension UIApplicationProxy {
+extension ApplicationProxy {
     /// Do not use this class directly
     public class _Once {
         /// called before `UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:)` once
@@ -56,7 +56,7 @@ extension UIApplicationProxy {
             print("Please override `beforeDidFinishLaunching()` of UIApplicationProxy.Once in extension if you want to use.")
         }
 
-        fileprivate init() {}
+        private init() {}
     }
 
     public class Once: _Once {
@@ -70,20 +70,8 @@ extension UIApplicationProxy {
 // MARK: - UIApplication Extension
 
 extension UIApplication {
-    /// An entrance for UIApplicationProxy.
-    public var proxy: UIApplicationProxy {
-        let object: UIApplicationProxy
-        if let _object = objc_getAssociatedObject(self, UIApplicationProxy.key) as? UIApplicationProxy {
-            object = _object
-        } else {
-            object = UIApplicationProxy(self)
-            objc_setAssociatedObject(self, UIApplicationProxy.key, object, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-        return object
-    }
-
     open override var next: UIResponder? {
-        _  = UIApplicationProxy.Once._callBeforeDidFinishLaunchingOnce
+        _  = ApplicationProxy.Once._callBeforeDidFinishLaunchingOnce
         return super.next
     }
 }

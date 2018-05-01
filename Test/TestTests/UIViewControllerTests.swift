@@ -7,14 +7,14 @@
 //
 
 import XCTest
-import UIApplicationDebugKit
+import ApplicationDebugKit
 @testable import Test
 
 class UIViewControllerTests: XCTestCase {
-    private class UIApplicationProxyDelegateMock: UIApplicationProxyDelegate {
+    private class ApplicationProxyDelegateMock: ApplicationProxyDelegate {
         var didCallLifeCycle: ((ViewControllerLifeCycle, UIViewController) -> Void)?
 
-        func applicationProxy(_ proxy: UIApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {
+        func applicationProxy(_ proxy: ApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {
             didCallLifeCycle?(lifeCycle, viewController)
         }
     }
@@ -22,18 +22,18 @@ class UIViewControllerTests: XCTestCase {
     private class UIViewControllerMock: UIViewController {}
 
     private var application: UIApplication!
-    private var proxy: UIApplicationProxy!
-    private var delegate: UIApplicationProxyDelegateMock!
+    private var proxy: ApplicationProxy!
+    private var delegate: ApplicationProxyDelegateMock!
     private var viewController: ViewController!
 
     override func setUp() {
         super.setUp()
 
         let app = UIApplication.shared
-        let delegate = UIApplicationProxyDelegateMock()
-        app.proxy.delegate = delegate
+        let delegate = ApplicationProxyDelegateMock()
+        ApplicationProxy.shared.delegate = delegate
         self.application = app
-        self.proxy = app.proxy
+        self.proxy = ApplicationProxy.shared
         self.delegate = delegate
         self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
     }

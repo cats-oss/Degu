@@ -1,6 +1,6 @@
 //
 //  UIViewController.extension.swift
-//  UIApplicationDebugKit
+//  ApplicationDebugKit
 //
 //  Created by marty-suzuki on 2018/04/19.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
@@ -50,8 +50,8 @@ let _onceSwizzlingForUIViewController: () = {
 }()
 
 extension UIViewController {
-    private var _applicationProxy: UIApplicationProxy {
-        return UIApplication.shared.proxy
+    private var _applicationProxy: ApplicationProxy {
+        return .shared
     }
 
     @objc fileprivate func _swizzled_viewDidLoad() {

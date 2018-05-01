@@ -1,6 +1,6 @@
 //
 //  RuntimeHandler.m
-//  UIApplicationDebugKit
+//  ApplicationDebugKit
 //
 //  Created by marty-suzuki on 2018/04/26.
 //  Copyright © 2018年 AbemaTV. All rights reserved.

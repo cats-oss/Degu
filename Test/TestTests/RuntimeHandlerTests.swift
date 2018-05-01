@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import UIApplicationDebugKit
+import ApplicationDebugKit
 @testable import Test
 
 extension RuntimeHandler {

@@ -1,4 +1,4 @@
-# UIApplicationDebugKit
+# ApplicationDebugKit
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
@@ -48,26 +48,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-`UIApplicationDebugKit` makes them easy!!
+`ApplicationDebugKit` makes them easy!!
 
 ## Usage
 
 This is an example. There are only 2 implementations what you have to.
 
-- set a delegate to `application.proxy.delegate`
-- implement `UIApplicationProxyDelegate`
+- set a delegate to `ApplicationProxy.shared.delegate`
+- implement `ApplicationProxyDelegate`
 
 ```swift
-import UIApplicationDebugKit
+import ApplicationDebugKit
 
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, ApplicationDelegate {
     ...
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
         #if DEBUG
-        application.proxy.delegate = self
+        ApplicationProxy.shared.delegate = self
         #endif
 
         ...
@@ -78,8 +78,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ...
 }
 
-extension AppDelegate: UIApplicationProxyDelegate {
-    func applicationProxy(_ proxy: UIApplicationProxy, didSendEvent event: UIEvent) {
+extension AppDelegate: ApplicationProxyDelegate {
+    func applicationProxy(_ proxy: ApplicationProxy, didSendEvent event: UIEvent) {
         print(event)
     }
 }
@@ -88,7 +88,7 @@ extension AppDelegate: UIApplicationProxyDelegate {
 You can get lifecycle method call of all ViewControllers.
 
 ```swift
-func applicationProxy(_ proxy: UIApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {
+func applicationProxy(_ proxy: ApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {
     print("ViewController = \(viewController)")
     print("LifeCycle = \(lifeCycle)")
 }

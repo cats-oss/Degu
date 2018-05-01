@@ -1,6 +1,6 @@
 //
 //  RuntimeHandler.h
-//  UIApplicationDebugKit
+//  ApplicationDebugKit
 //
 //  Created by marty-suzuki on 2018/04/26.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 /// not use directory
+///
+/// - note: NSObject.load and NSObject.initialize is not called if override objects from Swift.
+///         therefore overriding methods via RuntimeHandler extension.
 @interface _RuntimeHandler: NSObject
 
 /// Handle NSObject.load

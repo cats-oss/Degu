@@ -1,5 +1,5 @@
 //
-//  UIApplicationProxyOnceTests.swift
+//  ApplicationProxyOnceTests.swift
 //  TestTests
 //
 //  Created by marty-suzuki on 2018/04/25.
@@ -7,19 +7,19 @@
 //
 
 import XCTest
-import UIApplicationDebugKit
+import ApplicationDebugKit
 @testable import Test
 
-extension UIApplicationProxy.Once {
+extension ApplicationProxy.Once {
     override public class func beforeDidFinishLaunching() {
-        UIApplicationProxyOnceTests.isCalledBeforeDidFinishLaunchingMethod = true
+        ApplicationProxyOnceTests.isCalledBeforeDidFinishLaunchingMethod = true
     }
 }
 
-class UIApplicationProxyOnceTests: XCTestCase {
+class ApplicationProxyOnceTests: XCTestCase {
     fileprivate static var isCalledBeforeDidFinishLaunchingMethod = false
 
     func testBeforeDidFinishLaunching() {
-        XCTAssertTrue(UIApplicationProxyOnceTests.isCalledBeforeDidFinishLaunchingMethod)
+        XCTAssertTrue(ApplicationProxyOnceTests.isCalledBeforeDidFinishLaunchingMethod)
     }
 }

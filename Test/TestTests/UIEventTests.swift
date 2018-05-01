@@ -7,19 +7,19 @@
 //
 
 import XCTest
-import UIApplicationDebugKit
+import ApplicationDebugKit
 @testable import Test
 
 class UIEventTests: XCTestCase {
-    private class UIApplicationProxyDelegateMock: UIApplicationProxyDelegate {
+    private class ApplicationProxyDelegateMock: ApplicationProxyDelegate {
         var didSendEvent: ((UIEvent) -> Void)?
         var didSendAction: ((Selector, Any?, Any?, UIEvent?) -> Void)?
 
-        func applicationProxy(_ proxy: UIApplicationProxy, didSendEvent event: UIEvent) {
+        func applicationProxy(_ proxy: ApplicationProxy, didSendEvent event: UIEvent) {
             didSendEvent?(event)
         }
 
-        func applicationProxy(_ proxy: UIApplicationProxy, didSendAction action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) {
+        func applicationProxy(_ proxy: ApplicationProxy, didSendAction action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) {
             didSendAction?(action, target, sender, event)
         }
     }
@@ -31,18 +31,18 @@ class UIEventTests: XCTestCase {
     }
 
     private var application: UIApplication!
-    private var proxy: UIApplicationProxy!
-    private var delegate: UIApplicationProxyDelegateMock!
+    private var proxy: ApplicationProxy!
+    private var delegate: ApplicationProxyDelegateMock!
     private var viewController: ViewController!
 
     override func setUp() {
         super.setUp()
 
         let app = UIApplication.shared
-        let delegate = UIApplicationProxyDelegateMock()
-        app.proxy.delegate = delegate
+        let delegate = ApplicationProxyDelegateMock()
+        ApplicationProxy.shared.delegate = delegate
         self.application = app
-        self.proxy = app.proxy
+        self.proxy = ApplicationProxy.shared
         self.delegate = delegate
         self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
     }
