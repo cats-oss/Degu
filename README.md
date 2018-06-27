@@ -52,6 +52,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## Usage
 
+### 1. ApplicationProxy
+
 This is an example. There are only 2 implementations what you have to.
 
 - set a delegate to `ApplicationProxy.shared.delegate`
@@ -85,7 +87,7 @@ extension AppDelegate: ApplicationProxyDelegate {
 }
 ```
 
-You can get lifecycle method call of all ViewControllers.
+In addition, you can get lifecycle method call of all ViewControllers.
 
 ```swift
 func applicationProxy(_ proxy: ApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {
@@ -93,6 +95,30 @@ func applicationProxy(_ proxy: ApplicationProxy, didCallLifeCycle lifeCycle: Vie
     print("LifeCycle = \(lifeCycle)")
 }
 ```
+
+### 2. Override load or initialize method
+
+[+(void)load](https://developer.apple.com/documentation/objectivec/nsobject/1418815-load) and [+(void)initialize](https://developer.apple.com/documentation/objectivec/nsobject/1418639-initialize) are not permitted by Swift.
+
+![](./Images/load.png)
+
+![](./Images/initialize.png)
+
+You can override `+(void)load` and `+(void)initialize` in **Extension of RuntimeHandler**.
+
+```swift
+extension RuntimeHandler {
+    open override class func handleLoad() {
+        // do something
+    }
+
+    open override class func handleInitialize() {
+        // do something
+    }
+}
+```
+
+⚠️ `handleLoad` and `handleInitialize` are not called **Subclass of RuntimeHandler**. It only works in **Extension of RuntimeHandler**.
 
 ## Requirements
 
