@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D6213D920986E5000D053FF"
-               BuildableName = "ApplicationDebugKit.framework"
-               BlueprintName = "ApplicationDebugKit-iOS"
-               ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+               BlueprintIdentifier = "9DDA2DE020E4D83700FB2147"
+               BuildableName = "Degu.framework"
+               BlueprintName = "Degu-macOS"
+               ReferencedContainer = "container:Degu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D6213D920986E5000D053FF"
-            BuildableName = "ApplicationDebugKit.framework"
-            BlueprintName = "ApplicationDebugKit-iOS"
-            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9DDA2DE020E4D83700FB2147"
+            BuildableName = "Degu.framework"
+            BlueprintName = "Degu-macOS"
+            ReferencedContainer = "container:Degu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D6213D920986E5000D053FF"
-            BuildableName = "ApplicationDebugKit.framework"
-            BlueprintName = "ApplicationDebugKit-iOS"
-            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9DDA2DE020E4D83700FB2147"
+            BuildableName = "Degu.framework"
+            BlueprintName = "Degu-macOS"
+            ReferencedContainer = "container:Degu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ApplicationDebugKit
+import Degu
 @testable import Test
 
 class UIEventTests: XCTestCase {
@@ -33,7 +33,7 @@ class UIEventTests: XCTestCase {
     private var application: UIApplication!
     private var proxy: ApplicationProxy!
     private var delegate: ApplicationProxyDelegateMock!
-    private var viewController: Test.ViewController!
+    private var viewController: ViewController!
 
     override func setUp() {
         super.setUp()
@@ -44,7 +44,7 @@ class UIEventTests: XCTestCase {
         self.application = app
         self.proxy = ApplicationProxy.shared
         self.delegate = delegate
-        self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! Test.ViewController
+        self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
     }
 
     func testSendEvent() {

@@ -1,6 +1,6 @@
 //
 //  UIApplication.extension.swift
-//  ApplicationDebugKit
+//  Degu
 //
 //  Created by marty-suzuki on 2018/04/19.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
@@ -13,9 +13,9 @@
 #endif
 
 let _onceSwizzlingForApplication: () = {
-    swizzle(Application.self,
-            from: #selector(Application.sendEvent(_:)),
-            to: #selector(Application._swizzled_sendEvent(_:)))
+    swizzle(DeguApplication.self,
+            from: #selector(DeguApplication.sendEvent(_:)),
+            to: #selector(DeguApplication._swizzled_sendEvent(_:)))
     #if os(iOS) || os(tvOS)
         swizzle(UIApplication.self,
                 from: #selector(UIApplication.sendAction(_:to:from:for:)),
@@ -27,12 +27,12 @@ let _onceSwizzlingForApplication: () = {
     #endif
 }()
 
-extension Application {
+extension DeguApplication {
     private var _applicationProxy: ApplicationProxy {
         return .shared
     }
 
-    @objc fileprivate func _swizzled_sendEvent(_ event: Event) {
+    @objc fileprivate func _swizzled_sendEvent(_ event: DeguEvent) {
         _swizzled_sendEvent(event)
         _applicationProxy.didSendEvent(event)
     }

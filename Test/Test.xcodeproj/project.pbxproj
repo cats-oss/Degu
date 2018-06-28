@@ -15,7 +15,7 @@
 		9D195E6B20899354009DFBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D195E6920899354009DFBF6 /* LaunchScreen.storyboard */; };
 		9D195E86208993CC009DFBF6 /* UIEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D195E85208993CC009DFBF6 /* UIEventTests.swift */; };
 		9D195E8820899407009DFBF6 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D195E8720899407009DFBF6 /* UIViewControllerTests.swift */; };
-		9D6213F420986F3700D053FF /* ApplicationDebugKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6213F520986F3700D053FF /* ApplicationDebugKit.framework */; };
+		9DDA2DF220E4D99500FB2147 /* Degu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA2DF120E4D99500FB2147 /* Degu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 		9D195E85208993CC009DFBF6 /* UIEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEventTests.swift; sourceTree = "<group>"; };
 		9D195E8720899407009DFBF6 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 		9D6213F520986F3700D053FF /* ApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDA2DF120E4D99500FB2147 /* Degu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Degu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6213F420986F3700D053FF /* ApplicationDebugKit.framework in Frameworks */,
+				9DDA2DF220E4D99500FB2147 /* Degu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +110,7 @@
 		9D195E8020899388009DFBF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DDA2DF120E4D99500FB2147 /* Degu.framework */,
 				9D6213F520986F3700D053FF /* ApplicationDebugKit.framework */,
 			);
 			name = Frameworks;

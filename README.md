@@ -1,9 +1,9 @@
-# ApplicationDebugKit
+# Degu
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS%20%7C%20macOS-blue.svg?style=flat" alt="platforms" />
   <a href="https://developer.apple.com/swift">
-    <img src="http://img.shields.io/badge/Language-Swift4-orange.svg?style=flat" alt="Swift4" />
+    <img src="http://img.shields.io/badge/Language-Swift4.1-orange.svg?style=flat" alt="Swift4.1" />
   </a>
   <a href="">
     <img src="http://img.shields.io/badge/License-MIT-lightgray.svg?style=flat" alt="License" />
@@ -16,8 +16,8 @@
   <a href="https://github.com/apple/swift-package-manager">
     <img src="https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat" alt="SwiftPM" />
   </a>
-  <a href="http://cocoapods.org/pods/ApplicationDebugKit">
-    <img src="https://img.shields.io/cocoapods/v/ApplicationDebugKit.svg?style=flat" alt="Version" />
+  <a href="http://cocoapods.org/pods/Degu">
+    <img src="https://img.shields.io/cocoapods/v/Degu.svg?style=flat" alt="Version" />
   </a>
 </p>
 
@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-`ApplicationDebugKit` makes them easy!!
+`Degu` makes them easy!!
 
 ## Usage
 
@@ -77,7 +77,7 @@ This is an example. There are only 2 implementations what you have to.
 - implement `ApplicationProxyDelegate`
 
 ```swift
-import ApplicationDebugKit
+import Degu
 
 class AppDelegate: UIResponder, ApplicationDelegate {
     ...
@@ -141,27 +141,36 @@ extension RuntimeHandler {
 
 ### Carthage
 
-If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add ApplicationDebugKit to your `Cartfile`:
+If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add Degu to your `Cartfile`:
 
 ```
-github "cats-oss/ApplicationDebugKit"
+github "cats-oss/Degu"
+```
+
+### CocoaPods
+
+Degu is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'Degu'
 ```
 
 ### Swift Package Manager
 
-If you’re using [Swift Package Manager](https://github.com/apple/swift-package-manager), simply add ApplicationDebugKit to your `Package.swift`:
+If you’re using [Swift Package Manager](https://github.com/apple/swift-package-manager), simply add Degu to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/cats-oss/ApplicationDebugKit", from: "0.1.0")
+    .package(url: "https://github.com/cats-oss/Degu", from: "0.1.0")
 ]
 ```
 
 ## Requirements
 
-- Xcode 9.1
-- Swift 4
+- Xcode 9.3
+- Swift 4.1
 
 ## License
 
-UIApplicationDebugKit is available under the MIT license. See the LICENSE file for more info.
+Degu is available under the MIT license. See the LICENSE file for more info.

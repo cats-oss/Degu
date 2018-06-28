@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ApplicationDebugKit
+import Degu
 @testable import Test
 
 class UIViewControllerTests: XCTestCase {
@@ -24,7 +24,7 @@ class UIViewControllerTests: XCTestCase {
     private var application: UIApplication!
     private var proxy: ApplicationProxy!
     private var delegate: ApplicationProxyDelegateMock!
-    private var viewController: Test.ViewController!
+    private var viewController: ViewController!
 
     override func setUp() {
         super.setUp()
@@ -35,7 +35,7 @@ class UIViewControllerTests: XCTestCase {
         self.application = app
         self.proxy = ApplicationProxy.shared
         self.delegate = delegate
-        self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! Test.ViewController
+        self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
     }
 
     func testLifeCycle() {
@@ -52,9 +52,9 @@ class UIViewControllerTests: XCTestCase {
             ]
             delegate.didCallLifeCycle = { lifeCycle, viewController in
                 switch (lifeCycle, viewController) {
-                case (.viewWillDisappear, is Test.ViewController):
+                case (.viewWillDisappear, is ViewController):
                     return
-                case (.viewDidDisappear, is Test.ViewController):
+                case (.viewDidDisappear, is ViewController):
                     return
                 case (.viewWillLayoutSubviews, _):
                     return
@@ -120,9 +120,9 @@ class UIViewControllerTests: XCTestCase {
             ]
             delegate.didCallLifeCycle = { lifeCycle, viewController in
                 switch (lifeCycle, viewController) {
-                case (.viewWillAppear, is Test.ViewController):
+                case (.viewWillAppear, is ViewController):
                     return
-                case (.viewDidAppear, is Test.ViewController):
+                case (.viewDidAppear, is ViewController):
                     return
                 case (.viewWillLayoutSubviews, _):
                     return

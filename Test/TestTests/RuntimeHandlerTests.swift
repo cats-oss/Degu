@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ApplicationDebugKit
+import Degu
 @testable import Test
 
 extension RuntimeHandler {

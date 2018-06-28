@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9DC1463320E49DBA00A3AA68"
-               BuildableName = "ApplicationDebugKit.framework"
-               BlueprintName = "ApplicationDebugKit-macOS"
-               ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+               BlueprintIdentifier = "9DDA2DCF20E4D82500FB2147"
+               BuildableName = "Degu.framework"
+               BlueprintName = "Degu-tvOS"
+               ReferencedContainer = "container:Degu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9DC1463320E49DBA00A3AA68"
-            BuildableName = "ApplicationDebugKit.framework"
-            BlueprintName = "ApplicationDebugKit-macOS"
-            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9DDA2DCF20E4D82500FB2147"
+            BuildableName = "Degu.framework"
+            BlueprintName = "Degu-tvOS"
+            ReferencedContainer = "container:Degu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9DC1463320E49DBA00A3AA68"
-            BuildableName = "ApplicationDebugKit.framework"
-            BlueprintName = "ApplicationDebugKit-macOS"
-            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9DDA2DCF20E4D82500FB2147"
+            BuildableName = "Degu.framework"
+            BlueprintName = "Degu-tvOS"
+            ReferencedContainer = "container:Degu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

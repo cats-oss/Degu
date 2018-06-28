@@ -1,6 +1,6 @@
 //
 //  UIViewController.extension.swift
-//  ApplicationDebugKit
+//  Degu
 //
 //  Created by marty-suzuki on 2018/04/19.
 //  Copyright © 2018年 AbemaTV. All rights reserved.
@@ -30,9 +30,9 @@ public enum ViewControllerLifeCycle {
 }
 
 let _onceSwizzlingForViewController: () = {
-    swizzle(ViewController.self,
-            from: #selector(ViewController.viewDidLoad),
-            to: #selector(ViewController._swizzled_viewDidLoad))
+    swizzle(DeguViewController.self,
+            from: #selector(DeguViewController.viewDidLoad),
+            to: #selector(DeguViewController._swizzled_viewDidLoad))
 
     #if os(iOS) || os(tvOS)
         swizzle(UIViewController.self,
@@ -85,7 +85,7 @@ let _onceSwizzlingForViewController: () = {
     #endif
 }()
 
-extension ViewController {
+extension DeguViewController {
     private var _applicationProxy: ApplicationProxy {
         return .shared
     }

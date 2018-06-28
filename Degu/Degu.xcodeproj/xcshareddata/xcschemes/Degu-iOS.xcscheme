@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9DC1462120E49DAD00A3AA68"
-               BuildableName = "ApplicationDebugKit.framework"
-               BlueprintName = "ApplicationDebugKit-tvOS"
-               ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+               BlueprintIdentifier = "9DDA2DAB20E4D7D000FB2147"
+               BuildableName = "Degu.framework"
+               BlueprintName = "Degu-iOS"
+               ReferencedContainer = "container:Degu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9DC1462120E49DAD00A3AA68"
-            BuildableName = "ApplicationDebugKit.framework"
-            BlueprintName = "ApplicationDebugKit-tvOS"
-            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9DDA2DAB20E4D7D000FB2147"
+            BuildableName = "Degu.framework"
+            BlueprintName = "Degu-iOS"
+            ReferencedContainer = "container:Degu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9DC1462120E49DAD00A3AA68"
-            BuildableName = "ApplicationDebugKit.framework"
-            BlueprintName = "ApplicationDebugKit-tvOS"
-            ReferencedContainer = "container:ApplicationDebugKit.xcodeproj">
+            BlueprintIdentifier = "9DDA2DAB20E4D7D000FB2147"
+            BuildableName = "Degu.framework"
+            BlueprintName = "Degu-iOS"
+            ReferencedContainer = "container:Degu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
