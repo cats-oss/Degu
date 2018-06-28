@@ -6,6 +6,7 @@
 //  Copyright © 2018年 AbemaTV. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public protocol ApplicationProxyDelegate: class {
@@ -29,3 +30,4 @@ extension ApplicationProxyDelegate {
     public func applicationProxy(_ proxy: ApplicationProxy, didSendAction action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) {}
     public func applicationProxy(_ proxy: ApplicationProxy, didCallLifeCycle lifeCycle: ViewControllerLifeCycle, ofViewController viewController: UIViewController) {}
 }
+#endif

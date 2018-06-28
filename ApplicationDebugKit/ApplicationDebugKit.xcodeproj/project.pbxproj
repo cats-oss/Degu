@@ -7,27 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D6213DF20986E5000D053FF /* ApplicationDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D6213DD20986E5000D053FF /* ApplicationDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D6213ED20986E6A00D053FF /* ApplicationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6213E620986E6A00D053FF /* ApplicationProxy.swift */; };
-		9D6213EE20986E6A00D053FF /* ApplicationProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6213E720986E6A00D053FF /* ApplicationProxyDelegate.swift */; };
-		9D6213EF20986E6A00D053FF /* RuntimeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D6213E820986E6A00D053FF /* RuntimeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D6213F020986E6A00D053FF /* RuntimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6213E920986E6A00D053FF /* RuntimeHandler.m */; };
-		9D6213F120986E6A00D053FF /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6213EA20986E6A00D053FF /* Swizzle.swift */; };
-		9D6213F220986E6A00D053FF /* UIApplication.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6213EB20986E6A00D053FF /* UIApplication.extension.swift */; };
-		9D6213F320986E6A00D053FF /* UIViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6213EC20986E6A00D053FF /* UIViewController.extension.swift */; };
+		9D094C8720E480E9002229F9 /* UIViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7E20E480E9002229F9 /* UIViewController.extension.swift */; };
+		9D094C8820E480E9002229F9 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7F20E480E9002229F9 /* Swizzle.swift */; };
+		9D094C8920E480E9002229F9 /* UIApplication.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8020E480E9002229F9 /* UIApplication.extension.swift */; };
+		9D094C8A20E480E9002229F9 /* ApplicationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8120E480E9002229F9 /* ApplicationProxy.swift */; };
+		9D094C8B20E480E9002229F9 /* ApplicationProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */; };
+		9D094C8C20E480E9002229F9 /* RuntimeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D094C8520E480E9002229F9 /* RuntimeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D094C8D20E480E9002229F9 /* RuntimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8620E480E9002229F9 /* RuntimeHandler.m */; };
+		9DC1462020E497C000A3AA68 /* ApplicationDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC1461F20E497C000A3AA68 /* ApplicationDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D094C7E20E480E9002229F9 /* UIViewController.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.extension.swift; sourceTree = "<group>"; };
+		9D094C7F20E480E9002229F9 /* Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
+		9D094C8020E480E9002229F9 /* UIApplication.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.extension.swift; sourceTree = "<group>"; };
+		9D094C8120E480E9002229F9 /* ApplicationProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProxy.swift; sourceTree = "<group>"; };
+		9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProxyDelegate.swift; sourceTree = "<group>"; };
+		9D094C8520E480E9002229F9 /* RuntimeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeHandler.h; sourceTree = "<group>"; };
+		9D094C8620E480E9002229F9 /* RuntimeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeHandler.m; sourceTree = "<group>"; };
 		9D6213DA20986E5000D053FF /* ApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D6213DD20986E5000D053FF /* ApplicationDebugKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationDebugKit.h; sourceTree = "<group>"; };
-		9D6213DE20986E5000D053FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D6213E620986E6A00D053FF /* ApplicationProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProxy.swift; sourceTree = "<group>"; };
-		9D6213E720986E6A00D053FF /* ApplicationProxyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProxyDelegate.swift; sourceTree = "<group>"; };
-		9D6213E820986E6A00D053FF /* RuntimeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeHandler.h; sourceTree = "<group>"; };
-		9D6213E920986E6A00D053FF /* RuntimeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeHandler.m; sourceTree = "<group>"; };
-		9D6213EA20986E6A00D053FF /* Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
-		9D6213EB20986E6A00D053FF /* UIApplication.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.extension.swift; sourceTree = "<group>"; };
-		9D6213EC20986E6A00D053FF /* UIViewController.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.extension.swift; sourceTree = "<group>"; };
+		9DC1461F20E497C000A3AA68 /* ApplicationDebugKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDebugKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,10 +40,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D094C7C20E480E9002229F9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9DC1461F20E497C000A3AA68 /* ApplicationDebugKit.h */,
+				9D094C7D20E480E9002229F9 /* ApplicationDebugKit */,
+				9D094C8320E480E9002229F9 /* RuntimeHandler */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		9D094C7D20E480E9002229F9 /* ApplicationDebugKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D094C7E20E480E9002229F9 /* UIViewController.extension.swift */,
+				9D094C7F20E480E9002229F9 /* Swizzle.swift */,
+				9D094C8020E480E9002229F9 /* UIApplication.extension.swift */,
+				9D094C8120E480E9002229F9 /* ApplicationProxy.swift */,
+				9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */,
+			);
+			path = ApplicationDebugKit;
+			sourceTree = "<group>";
+		};
+		9D094C8320E480E9002229F9 /* RuntimeHandler */ = {
+			isa = PBXGroup;
+			children = (
+				9D094C8420E480E9002229F9 /* include */,
+				9D094C8620E480E9002229F9 /* RuntimeHandler.m */,
+			);
+			path = RuntimeHandler;
+			sourceTree = "<group>";
+		};
+		9D094C8420E480E9002229F9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9D094C8520E480E9002229F9 /* RuntimeHandler.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		9D6213D020986E5000D053FF = {
 			isa = PBXGroup;
 			children = (
-				9D6213DC20986E5000D053FF /* ApplicationDebugKit */,
+				9D094C7C20E480E9002229F9 /* Sources */,
 				9D6213DB20986E5000D053FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,30 +96,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D6213DC20986E5000D053FF /* ApplicationDebugKit */ = {
-			isa = PBXGroup;
-			children = (
-				9D6213E520986E6A00D053FF /* Source */,
-				9D6213DD20986E5000D053FF /* ApplicationDebugKit.h */,
-				9D6213DE20986E5000D053FF /* Info.plist */,
-			);
-			path = ApplicationDebugKit;
-			sourceTree = "<group>";
-		};
-		9D6213E520986E6A00D053FF /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				9D6213E620986E6A00D053FF /* ApplicationProxy.swift */,
-				9D6213E720986E6A00D053FF /* ApplicationProxyDelegate.swift */,
-				9D6213E820986E6A00D053FF /* RuntimeHandler.h */,
-				9D6213E920986E6A00D053FF /* RuntimeHandler.m */,
-				9D6213EA20986E6A00D053FF /* Swizzle.swift */,
-				9D6213EB20986E6A00D053FF /* UIApplication.extension.swift */,
-				9D6213EC20986E6A00D053FF /* UIViewController.extension.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -88,8 +103,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6213EF20986E6A00D053FF /* RuntimeHandler.h in Headers */,
-				9D6213DF20986E5000D053FF /* ApplicationDebugKit.h in Headers */,
+				9DC1462020E497C000A3AA68 /* ApplicationDebugKit.h in Headers */,
+				9D094C8C20E480E9002229F9 /* RuntimeHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,12 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6213F320986E6A00D053FF /* UIViewController.extension.swift in Sources */,
-				9D6213F120986E6A00D053FF /* Swizzle.swift in Sources */,
-				9D6213EE20986E6A00D053FF /* ApplicationProxyDelegate.swift in Sources */,
-				9D6213F020986E6A00D053FF /* RuntimeHandler.m in Sources */,
-				9D6213F220986E6A00D053FF /* UIApplication.extension.swift in Sources */,
-				9D6213ED20986E6A00D053FF /* ApplicationProxy.swift in Sources */,
+				9D094C8820E480E9002229F9 /* Swizzle.swift in Sources */,
+				9D094C8D20E480E9002229F9 /* RuntimeHandler.m in Sources */,
+				9D094C8B20E480E9002229F9 /* ApplicationProxyDelegate.swift in Sources */,
+				9D094C8920E480E9002229F9 /* UIApplication.extension.swift in Sources */,
+				9D094C8720E480E9002229F9 /* UIViewController.extension.swift in Sources */,
+				9D094C8A20E480E9002229F9 /* ApplicationProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +311,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ApplicationDebugKit/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -319,7 +334,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ApplicationDebugKit/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

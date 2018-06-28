@@ -6,6 +6,7 @@
 //  Copyright © 2018年 AbemaTV. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 
@@ -35,3 +36,4 @@ extension UIApplication {
         return result
     }
 }
+#endif

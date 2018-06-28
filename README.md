@@ -120,6 +120,22 @@ extension RuntimeHandler {
 
 ⚠️ `handleLoad` and `handleInitialize` are not called **Subclass of RuntimeHandler**. It only works in **Extension of RuntimeHandler**.
 
+## Installation
+
+### Carthage
+
+```
+github "cats-oss/ApplicationDebugKit"
+```
+
+### Swift Package Manager
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/cats-oss/ApplicationDebugKit", from: "0.1.0")
+]
+```
+
 ## Requirements
 
 - Xcode 9.1

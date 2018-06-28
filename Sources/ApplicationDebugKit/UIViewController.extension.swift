@@ -6,6 +6,7 @@
 //  Copyright © 2018年 AbemaTV. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 /// Represent ViewController life cycles.
@@ -89,3 +90,4 @@ extension UIViewController {
         _applicationProxy.didCallLifeCycle(.viewDidLayoutSubviews, of: self)
     }
 }
+#endif
