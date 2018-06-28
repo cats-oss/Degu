@@ -16,7 +16,6 @@
 		9D195E86208993CC009DFBF6 /* UIEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D195E85208993CC009DFBF6 /* UIEventTests.swift */; };
 		9D195E8820899407009DFBF6 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D195E8720899407009DFBF6 /* UIViewControllerTests.swift */; };
 		9D6213F420986F3700D053FF /* ApplicationDebugKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6213F520986F3700D053FF /* ApplicationDebugKit.framework */; };
-		9DD31EA020904B7100E10503 /* ApplicationProxyOnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD31E9F20904B7100E10503 /* ApplicationProxyOnceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		9D195E85208993CC009DFBF6 /* UIEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEventTests.swift; sourceTree = "<group>"; };
 		9D195E8720899407009DFBF6 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 		9D6213F520986F3700D053FF /* ApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DD31E9F20904B7100E10503 /* ApplicationProxyOnceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationProxyOnceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 			children = (
 				9D195E85208993CC009DFBF6 /* UIEventTests.swift */,
 				9D195E8720899407009DFBF6 /* UIViewControllerTests.swift */,
-				9DD31E9F20904B7100E10503 /* ApplicationProxyOnceTests.swift */,
 				9D137DA120918BE300457B6C /* RuntimeHandlerTests.swift */,
 				9D195E7720899354009DFBF6 /* Info.plist */,
 			);
@@ -232,7 +229,6 @@
 				9D195E8820899407009DFBF6 /* UIViewControllerTests.swift in Sources */,
 				9D137DA220918BE300457B6C /* RuntimeHandlerTests.swift in Sources */,
 				9D195E86208993CC009DFBF6 /* UIEventTests.swift in Sources */,
-				9DD31EA020904B7100E10503 /* ApplicationProxyOnceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

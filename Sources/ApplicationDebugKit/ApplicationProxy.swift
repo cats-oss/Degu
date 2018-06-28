@@ -58,36 +58,3 @@ extension ApplicationProxy {
         delegate?.applicationProxy(self, didCallLifeCycle: lifeCycle, ofViewController: viewController)
     }
 }
-
-#if os(iOS) || os(tvOS)
-    // MARK: - ApplicationProxy.Once
-
-    extension ApplicationProxy {
-        /// Do not use this class directly
-        public class _Once {
-            /// called before `UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:)` once
-            ///
-            /// - note: If you want to do something before `UIApplicationDelegate.application(_:didFinishLaunchingWithOptions:)`, override this method.
-            @objc dynamic open class func beforeDidFinishLaunching() {
-                print("Please override `beforeDidFinishLaunching()` of UIApplicationProxy.Once in extension if you want to use.")
-            }
-
-            private init() {}
-        }
-
-        public class Once: _Once {
-            fileprivate static private(set) var _callBeforeDidFinishLaunchingOnce: () = {
-                beforeDidFinishLaunching()
-            }()
-        }
-    }
-
-    // MARK: - UIApplication Extension
-
-    extension UIApplication {
-        open override var next: UIResponder? {
-            _  = ApplicationProxy.Once._callBeforeDidFinishLaunchingOnce
-            return super.next
-        }
-    }
-#endif
