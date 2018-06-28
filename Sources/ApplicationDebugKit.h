@@ -6,7 +6,7 @@
 //  Copyright © 2018年 AbemaTV. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for ApplicationDebugKit.
 FOUNDATION_EXPORT double ApplicationDebugKitVersionNumber;

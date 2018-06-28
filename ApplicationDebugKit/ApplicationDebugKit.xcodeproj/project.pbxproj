@@ -7,30 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D094C8720E480E9002229F9 /* UIViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7E20E480E9002229F9 /* UIViewController.extension.swift */; };
+		9D094C8720E480E9002229F9 /* ViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7E20E480E9002229F9 /* ViewController.extension.swift */; };
 		9D094C8820E480E9002229F9 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7F20E480E9002229F9 /* Swizzle.swift */; };
-		9D094C8920E480E9002229F9 /* UIApplication.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8020E480E9002229F9 /* UIApplication.extension.swift */; };
+		9D094C8920E480E9002229F9 /* Application.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8020E480E9002229F9 /* Application.extension.swift */; };
 		9D094C8A20E480E9002229F9 /* ApplicationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8120E480E9002229F9 /* ApplicationProxy.swift */; };
 		9D094C8B20E480E9002229F9 /* ApplicationProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */; };
 		9D094C8C20E480E9002229F9 /* RuntimeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D094C8520E480E9002229F9 /* RuntimeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D094C8D20E480E9002229F9 /* RuntimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8620E480E9002229F9 /* RuntimeHandler.m */; };
 		9DC1462020E497C000A3AA68 /* ApplicationDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC1461F20E497C000A3AA68 /* ApplicationDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC1462320E49DAD00A3AA68 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7F20E480E9002229F9 /* Swizzle.swift */; };
+		9DC1462420E49DAD00A3AA68 /* RuntimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8620E480E9002229F9 /* RuntimeHandler.m */; };
+		9DC1462520E49DAD00A3AA68 /* ApplicationProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */; };
+		9DC1462620E49DAD00A3AA68 /* Application.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8020E480E9002229F9 /* Application.extension.swift */; };
+		9DC1462720E49DAD00A3AA68 /* ViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7E20E480E9002229F9 /* ViewController.extension.swift */; };
+		9DC1462820E49DAD00A3AA68 /* ApplicationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8120E480E9002229F9 /* ApplicationProxy.swift */; };
+		9DC1462B20E49DAD00A3AA68 /* ApplicationDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC1461F20E497C000A3AA68 /* ApplicationDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC1462C20E49DAD00A3AA68 /* RuntimeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D094C8520E480E9002229F9 /* RuntimeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC1463520E49DBA00A3AA68 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7F20E480E9002229F9 /* Swizzle.swift */; };
+		9DC1463620E49DBA00A3AA68 /* RuntimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8620E480E9002229F9 /* RuntimeHandler.m */; };
+		9DC1463720E49DBA00A3AA68 /* ApplicationProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */; };
+		9DC1463820E49DBA00A3AA68 /* Application.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8020E480E9002229F9 /* Application.extension.swift */; };
+		9DC1463920E49DBA00A3AA68 /* ViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C7E20E480E9002229F9 /* ViewController.extension.swift */; };
+		9DC1463A20E49DBA00A3AA68 /* ApplicationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D094C8120E480E9002229F9 /* ApplicationProxy.swift */; };
+		9DC1463D20E49DBA00A3AA68 /* ApplicationDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC1461F20E497C000A3AA68 /* ApplicationDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC1463E20E49DBA00A3AA68 /* RuntimeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D094C8520E480E9002229F9 /* RuntimeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D094C7E20E480E9002229F9 /* UIViewController.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.extension.swift; sourceTree = "<group>"; };
+		9D094C7E20E480E9002229F9 /* ViewController.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.extension.swift; sourceTree = "<group>"; };
 		9D094C7F20E480E9002229F9 /* Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
-		9D094C8020E480E9002229F9 /* UIApplication.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.extension.swift; sourceTree = "<group>"; };
+		9D094C8020E480E9002229F9 /* Application.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.extension.swift; sourceTree = "<group>"; };
 		9D094C8120E480E9002229F9 /* ApplicationProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProxy.swift; sourceTree = "<group>"; };
 		9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationProxyDelegate.swift; sourceTree = "<group>"; };
 		9D094C8520E480E9002229F9 /* RuntimeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeHandler.h; sourceTree = "<group>"; };
 		9D094C8620E480E9002229F9 /* RuntimeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeHandler.m; sourceTree = "<group>"; };
 		9D6213DA20986E5000D053FF /* ApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC1461F20E497C000A3AA68 /* ApplicationDebugKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDebugKit.h; sourceTree = "<group>"; };
+		9DC1463120E49DAD00A3AA68 /* ApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC1464320E49DBA00A3AA68 /* ApplicationDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApplicationDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC1464520E49F5400A3AA68 /* ApplicationDebugKit-macOS_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplicationDebugKit-macOS_Info.plist"; sourceTree = "<group>"; };
+		9DC1464620E49F5400A3AA68 /* ApplicationDebugKit-iOS_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplicationDebugKit-iOS_Info.plist"; sourceTree = "<group>"; };
+		9DC1464720E49F5400A3AA68 /* ApplicationDebugKit-tvOS_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplicationDebugKit-tvOS_Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D6213D620986E5000D053FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC1462920E49DAD00A3AA68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC1463B20E49DBA00A3AA68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,9 +89,9 @@
 		9D094C7D20E480E9002229F9 /* ApplicationDebugKit */ = {
 			isa = PBXGroup;
 			children = (
-				9D094C7E20E480E9002229F9 /* UIViewController.extension.swift */,
+				9D094C7E20E480E9002229F9 /* ViewController.extension.swift */,
 				9D094C7F20E480E9002229F9 /* Swizzle.swift */,
-				9D094C8020E480E9002229F9 /* UIApplication.extension.swift */,
+				9D094C8020E480E9002229F9 /* Application.extension.swift */,
 				9D094C8120E480E9002229F9 /* ApplicationProxy.swift */,
 				9D094C8220E480E9002229F9 /* ApplicationProxyDelegate.swift */,
 			);
@@ -83,6 +118,7 @@
 		9D6213D020986E5000D053FF = {
 			isa = PBXGroup;
 			children = (
+				9DC1464820E49F6400A3AA68 /* Resources */,
 				9D094C7C20E480E9002229F9 /* Sources */,
 				9D6213DB20986E5000D053FF /* Products */,
 			);
@@ -92,8 +128,20 @@
 			isa = PBXGroup;
 			children = (
 				9D6213DA20986E5000D053FF /* ApplicationDebugKit.framework */,
+				9DC1463120E49DAD00A3AA68 /* ApplicationDebugKit.framework */,
+				9DC1464320E49DBA00A3AA68 /* ApplicationDebugKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9DC1464820E49F6400A3AA68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DC1464620E49F5400A3AA68 /* ApplicationDebugKit-iOS_Info.plist */,
+				9DC1464520E49F5400A3AA68 /* ApplicationDebugKit-macOS_Info.plist */,
+				9DC1464720E49F5400A3AA68 /* ApplicationDebugKit-tvOS_Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,12 +156,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DC1462A20E49DAD00A3AA68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC1462B20E49DAD00A3AA68 /* ApplicationDebugKit.h in Headers */,
+				9DC1462C20E49DAD00A3AA68 /* RuntimeHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC1463C20E49DBA00A3AA68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC1463D20E49DBA00A3AA68 /* ApplicationDebugKit.h in Headers */,
+				9DC1463E20E49DBA00A3AA68 /* RuntimeHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9D6213D920986E5000D053FF /* ApplicationDebugKit */ = {
+		9D6213D920986E5000D053FF /* ApplicationDebugKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D6213E220986E5000D053FF /* Build configuration list for PBXNativeTarget "ApplicationDebugKit" */;
+			buildConfigurationList = 9D6213E220986E5000D053FF /* Build configuration list for PBXNativeTarget "ApplicationDebugKit-iOS" */;
 			buildPhases = (
 				9D6213D520986E5000D053FF /* Sources */,
 				9D6213D620986E5000D053FF /* Frameworks */,
@@ -124,9 +190,45 @@
 			);
 			dependencies = (
 			);
-			name = ApplicationDebugKit;
+			name = "ApplicationDebugKit-iOS";
 			productName = ApplicationDebugKit;
 			productReference = 9D6213DA20986E5000D053FF /* ApplicationDebugKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DC1462120E49DAD00A3AA68 /* ApplicationDebugKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC1462E20E49DAD00A3AA68 /* Build configuration list for PBXNativeTarget "ApplicationDebugKit-tvOS" */;
+			buildPhases = (
+				9DC1462220E49DAD00A3AA68 /* Sources */,
+				9DC1462920E49DAD00A3AA68 /* Frameworks */,
+				9DC1462A20E49DAD00A3AA68 /* Headers */,
+				9DC1462D20E49DAD00A3AA68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ApplicationDebugKit-tvOS";
+			productName = ApplicationDebugKit;
+			productReference = 9DC1463120E49DAD00A3AA68 /* ApplicationDebugKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DC1463320E49DBA00A3AA68 /* ApplicationDebugKit-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC1464020E49DBA00A3AA68 /* Build configuration list for PBXNativeTarget "ApplicationDebugKit-macOS" */;
+			buildPhases = (
+				9DC1463420E49DBA00A3AA68 /* Sources */,
+				9DC1463B20E49DBA00A3AA68 /* Frameworks */,
+				9DC1463C20E49DBA00A3AA68 /* Headers */,
+				9DC1463F20E49DBA00A3AA68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ApplicationDebugKit-macOS";
+			productName = ApplicationDebugKit;
+			productReference = 9DC1464320E49DBA00A3AA68 /* ApplicationDebugKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -140,6 +242,12 @@
 				TargetAttributes = {
 					9D6213D920986E5000D053FF = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					9DC1462120E49DAD00A3AA68 = {
+						ProvisioningStyle = Manual;
+					};
+					9DC1463320E49DBA00A3AA68 = {
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -156,13 +264,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D6213D920986E5000D053FF /* ApplicationDebugKit */,
+				9D6213D920986E5000D053FF /* ApplicationDebugKit-iOS */,
+				9DC1462120E49DAD00A3AA68 /* ApplicationDebugKit-tvOS */,
+				9DC1463320E49DBA00A3AA68 /* ApplicationDebugKit-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9D6213D820986E5000D053FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC1462D20E49DAD00A3AA68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC1463F20E49DBA00A3AA68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,9 +303,35 @@
 				9D094C8820E480E9002229F9 /* Swizzle.swift in Sources */,
 				9D094C8D20E480E9002229F9 /* RuntimeHandler.m in Sources */,
 				9D094C8B20E480E9002229F9 /* ApplicationProxyDelegate.swift in Sources */,
-				9D094C8920E480E9002229F9 /* UIApplication.extension.swift in Sources */,
-				9D094C8720E480E9002229F9 /* UIViewController.extension.swift in Sources */,
+				9D094C8920E480E9002229F9 /* Application.extension.swift in Sources */,
+				9D094C8720E480E9002229F9 /* ViewController.extension.swift in Sources */,
 				9D094C8A20E480E9002229F9 /* ApplicationProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC1462220E49DAD00A3AA68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC1462320E49DAD00A3AA68 /* Swizzle.swift in Sources */,
+				9DC1462420E49DAD00A3AA68 /* RuntimeHandler.m in Sources */,
+				9DC1462520E49DAD00A3AA68 /* ApplicationProxyDelegate.swift in Sources */,
+				9DC1462620E49DAD00A3AA68 /* Application.extension.swift in Sources */,
+				9DC1462720E49DAD00A3AA68 /* ViewController.extension.swift in Sources */,
+				9DC1462820E49DAD00A3AA68 /* ApplicationProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC1463420E49DBA00A3AA68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC1463520E49DBA00A3AA68 /* Swizzle.swift in Sources */,
+				9DC1463620E49DBA00A3AA68 /* RuntimeHandler.m in Sources */,
+				9DC1463720E49DBA00A3AA68 /* ApplicationProxyDelegate.swift in Sources */,
+				9DC1463820E49DBA00A3AA68 /* Application.extension.swift in Sources */,
+				9DC1463920E49DBA00A3AA68 /* ViewController.extension.swift in Sources */,
+				9DC1463A20E49DBA00A3AA68 /* ApplicationProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,12 +461,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "Resources/ApplicationDebugKit-iOS_Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.abema.ApplicationDebugKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ApplicationDebugKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -334,13 +484,113 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "Resources/ApplicationDebugKit-iOS_Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.abema.ApplicationDebugKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ApplicationDebugKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DC1462F20E49DAD00A3AA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Resources/ApplicationDebugKit-tvOS_Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.abema.ApplicationDebugKit;
+				PRODUCT_NAME = ApplicationDebugKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		9DC1463020E49DAD00A3AA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Resources/ApplicationDebugKit-tvOS_Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.abema.ApplicationDebugKit;
+				PRODUCT_NAME = ApplicationDebugKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		9DC1464120E49DBA00A3AA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Resources/ApplicationDebugKit-macOS_Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = tv.abema.ApplicationDebugKit;
+				PRODUCT_NAME = ApplicationDebugKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DC1464220E49DBA00A3AA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Resources/ApplicationDebugKit-macOS_Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = tv.abema.ApplicationDebugKit;
+				PRODUCT_NAME = ApplicationDebugKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,11 +609,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D6213E220986E5000D053FF /* Build configuration list for PBXNativeTarget "ApplicationDebugKit" */ = {
+		9D6213E220986E5000D053FF /* Build configuration list for PBXNativeTarget "ApplicationDebugKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D6213E320986E5000D053FF /* Debug */,
 				9D6213E420986E5000D053FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC1462E20E49DAD00A3AA68 /* Build configuration list for PBXNativeTarget "ApplicationDebugKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC1462F20E49DAD00A3AA68 /* Debug */,
+				9DC1463020E49DAD00A3AA68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC1464020E49DBA00A3AA68 /* Build configuration list for PBXNativeTarget "ApplicationDebugKit-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC1464120E49DBA00A3AA68 /* Debug */,
+				9DC1464220E49DBA00A3AA68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

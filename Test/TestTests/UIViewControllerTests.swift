@@ -24,7 +24,7 @@ class UIViewControllerTests: XCTestCase {
     private var application: UIApplication!
     private var proxy: ApplicationProxy!
     private var delegate: ApplicationProxyDelegateMock!
-    private var viewController: ViewController!
+    private var viewController: Test.ViewController!
 
     override func setUp() {
         super.setUp()
@@ -35,7 +35,7 @@ class UIViewControllerTests: XCTestCase {
         self.application = app
         self.proxy = ApplicationProxy.shared
         self.delegate = delegate
-        self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! ViewController
+        self.viewController = (app.delegate as! AppDelegate).window!.rootViewController as! Test.ViewController
     }
 
     func testLifeCycle() {
@@ -52,9 +52,9 @@ class UIViewControllerTests: XCTestCase {
             ]
             delegate.didCallLifeCycle = { lifeCycle, viewController in
                 switch (lifeCycle, viewController) {
-                case (.viewWillDisappear, is ViewController):
+                case (.viewWillDisappear, is Test.ViewController):
                     return
-                case (.viewDidDisappear, is ViewController):
+                case (.viewDidDisappear, is Test.ViewController):
                     return
                 case (.viewWillLayoutSubviews, _):
                     return
@@ -120,9 +120,9 @@ class UIViewControllerTests: XCTestCase {
             ]
             delegate.didCallLifeCycle = { lifeCycle, viewController in
                 switch (lifeCycle, viewController) {
-                case (.viewWillAppear, is ViewController):
+                case (.viewWillAppear, is Test.ViewController):
                     return
-                case (.viewDidAppear, is ViewController):
+                case (.viewDidAppear, is Test.ViewController):
                     return
                 case (.viewWillLayoutSubviews, _):
                     return
