@@ -1,8 +1,17 @@
 # ApplicationDebugKit
 
-[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
-[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+<p align="center">
+  <img src="https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS-blue.svg?style=flat" alt="platforms" />
+  <a href="https://developer.apple.com/swift">
+    <img src="http://img.shields.io/badge/language-Swift4-orange.svg?style=flat" alt="Swift4" />
+  </a>
+  <a href="https://github.com/Carthage/Carthage">
+    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
+  </a>
+  <a href="https://github.com/apple/swift-package-manager">
+    <img src="https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat" alt="SwiftPM" />
+  </a>
+</p>
 
 If you want to get all events of an application, you can get events from `UIApplication.sendEvent(_:)`. But, following implementations are needed to get events from it.
 
@@ -124,11 +133,15 @@ extension RuntimeHandler {
 
 ### Carthage
 
+If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add ApplicationDebugKit to your `Cartfile`:
+
 ```
 github "cats-oss/ApplicationDebugKit"
 ```
 
 ### Swift Package Manager
+
+If you’re using [Swift Package Manager](https://github.com/apple/swift-package-manager), simply add ApplicationDebugKit to your `Package.swift`:
 
 ```swift
 dependencies: [
