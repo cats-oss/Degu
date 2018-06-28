@@ -1,15 +1,23 @@
 # ApplicationDebugKit
 
 <p align="center">
-  <img src="https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS-blue.svg?style=flat" alt="platforms" />
+  <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS%20%7C%20macOS-blue.svg?style=flat" alt="platforms" />
   <a href="https://developer.apple.com/swift">
-    <img src="http://img.shields.io/badge/language-Swift4-orange.svg?style=flat" alt="Swift4" />
+    <img src="http://img.shields.io/badge/Language-Swift4-orange.svg?style=flat" alt="Swift4" />
   </a>
+  <a href="">
+    <img src="http://img.shields.io/badge/License-MIT-lightgray.svg?style=flat" alt="License" />
+  </a>
+</p>
+<p align="center">
   <a href="https://github.com/Carthage/Carthage">
     <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
   </a>
   <a href="https://github.com/apple/swift-package-manager">
     <img src="https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat" alt="SwiftPM" />
+  </a>
+  <a href="http://cocoapods.org/pods/ApplicationDebugKit">
+    <img src="https://img.shields.io/cocoapods/v/ApplicationDebugKit.svg?style=flat" alt="Version" />
   </a>
 </p>
 
