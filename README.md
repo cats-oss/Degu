@@ -6,7 +6,7 @@
   <a href="https://developer.apple.com/swift">
     <img src="http://img.shields.io/badge/Language-Swift4.1-orange.svg?style=flat" alt="Swift4.1" />
   </a>
-  <a href="">
+  <a href="./LICENSE">
     <img src="http://img.shields.io/badge/License-MIT-lightgray.svg?style=flat" alt="License" />
   </a>
   <br />
