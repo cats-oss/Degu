@@ -1,5 +1,6 @@
-# Degu
-
+<p align="center">
+  <img src="./Images/degu_logo.png" alt="DEGU" />
+</p>
 <p align="center">
   <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS%20%7C%20macOS-blue.svg?style=flat" alt="platforms" />
   <a href="https://developer.apple.com/swift">
@@ -8,8 +9,7 @@
   <a href="">
     <img src="http://img.shields.io/badge/License-MIT-lightgray.svg?style=flat" alt="License" />
   </a>
-</p>
-<p align="center">
+  <br />
   <a href="https://github.com/Carthage/Carthage">
     <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
   </a>
