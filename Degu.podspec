@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name     = "Degu"
-  s.version  = "0.1.0"
+  s.version  = "0.1.1"
   s.summary  = "Degu makes more easier to debug application."
   s.homepage = "https://github.com/cats-oss/Degu"
   s.license  = { :type => "MIT", :file => "LICENSE" }
