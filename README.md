@@ -173,4 +173,4 @@ dependencies: [
 
 ## License
 
-Degu is available under the MIT license. See the LICENSE file for more info.
+Degu is available under the MIT license. See the [LICENSE file](https://github.com/cats-oss/Degu/blob/master/LICENSE) for more info.
