@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name     = "Degu"
-  s.version  = "0.1.1"
+  s.version  = "0.2.0"
   s.summary  = "Degu makes more easier to debug application."
   s.homepage = "https://github.com/cats-oss/Degu"
   s.license  = { :type => "MIT", :file => "LICENSE" }
   s.author   = { "marty-suzuki" => "suzuki_taiki@abema.tv" }
   s.source   = { :git => "https://github.com/cats-oss/Degu.git", :tag => s.version.to_s }
 
-  s.swift_version = '4.1'
+  s.swift_version = '5.1'
   s.source_files  = 'Sources/**/*.{swift,h,m}'
 
   s.ios.frameworks   = 'UIKit'
