@@ -168,8 +168,8 @@ dependencies: [
 
 ## Requirements
 
-- Xcode 9.3
-- Swift 4.1
+- Xcode 11.1
+- Swift 5.1
 
 ## License
 
