@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS%20%7C%20macOS-blue.svg?style=flat" alt="platforms" />
   <a href="https://developer.apple.com/swift">
-    <img src="http://img.shields.io/badge/Language-Swift4.1-orange.svg?style=flat" alt="Swift4.1" />
+    <img src="http://img.shields.io/badge/Language-Swift5.1-orange.svg?style=flat" alt="Swift4.1" />
   </a>
   <a href="./LICENSE">
     <img src="http://img.shields.io/badge/License-MIT-lightgray.svg?style=flat" alt="License" />
@@ -162,7 +162,7 @@ If you’re using [Swift Package Manager](https://github.com/apple/swift-package
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/cats-oss/Degu", from: "0.1.0")
+    .package(url: "https://github.com/cats-oss/Degu", from: "0.2.0")
 ]
 ```
 
